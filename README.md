@@ -73,8 +73,7 @@ Compile command (assuming main.c is the name of the file):
 clang main.c -o main -std=gnu11 -lwiringPi -lwiringPiDev 
 ```
 
-To read the serial output of the BRTT, you can use the Windows PC the same way
-as you did in the previous exercises. On Linux you can use `picocom`, the full
+For this exercise we will be using Linux. To read the serial output of the BRTT, you can use `picocom`, the full
 command should look something like this:
 
 ```shell
