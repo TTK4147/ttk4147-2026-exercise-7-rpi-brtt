@@ -106,7 +106,7 @@ and bad real-time performance, we need to make some changes to our program.
 
 We want to run everything on the same CPU core. The following
 function can be called in the start of a spawned thread function, and will
-ensure that the thread only will be executed on the specified CPU core.
+ensure that the thread only will be executed on the specified CPU core. *NB*: Set the prescaler on the BRTT to 65 ms, otherwise it will most likely time out.
 
 ```c
 #include <sched.h>
